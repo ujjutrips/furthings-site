@@ -6,61 +6,54 @@
   <title>FurThings – Coming Soon</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #fdfdfd;
+      font-family: Helvetica, sans-serif;
+      background: linear-gradient(135deg, #2C98E9, #044EA4);
       margin: 0;
       padding: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
-      position: relative;
-      color: #333;
+      color: white;
+      letter-spacing: 0.05em;
     }
     .content {
-      position: relative;
-      z-index: 10;
-      max-width: 600px;
-      padding: 40px;
       text-align: center;
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 12px;
+      padding: 40px;
     }
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      font-size: 2.8em;
+      position: relative;
+      display: inline-block;
+    }
+    h1 .tm {
+      font-size: 0.45em;
+      position: absolute;
+      top: -0.4em;
+      right: -1.2em;
     }
     p {
       font-size: 1.1em;
-      margin-bottom: 20px;
+      margin: 0.6em 0;
+    }
+    .coming-soon {
+      font-weight: bold;
+      font-size: 1.4em;
+      margin-top: 1.5em;
     }
     .legal {
-      font-size: 0.85em;
-      color: #777;
-      margin-top: 40px;
+      font-size: 0.8em;
+      color: rgba(255, 255, 255, 0.75);
+      margin-top: 2em;
     }
-    .bg-img {
-      position: absolute;
-      opacity: 0.15;
-      z-index: 1;
-    }
-    .bg-top-left { top: 0; left: 0; height: 300px; }
-    .bg-top-right { top: 0; right: 0; height: 300px; }
-    .bg-bottom-left { bottom: 0; left: 0; height: 300px; }
-    .bg-bottom-right { bottom: 0; right: 0; height: 300px; }
   </style>
 </head>
 <body>
-  <img src="assets/cad-collar.jpg" class="bg-img bg-top-left" alt="">
-  <img src="assets/cad-furtag.jpg" class="bg-img bg-top-right" alt="">
-  <img src="assets/cad-accessory.jpg" class="bg-img bg-bottom-left" alt="">
-  <img src="assets/cad-chip.jpg" class="bg-img bg-bottom-right" alt="">
-
   <div class="content">
-    <h1>FurThings.com</h1>
-    <p>We’re building something special for the world’s most loved pets.<br><br>Accessories. Identity. Care.</p>
-    <p><strong>Coming Soon.</strong></p>
+    <h1>FurThings<span class="tm">™</span></h1>
+    <p>We’re building something special for the world’s most loved pets.</p>
+    <p>Accessories. Identity. Care.</p>
+    <p class="coming-soon">Coming Soon.</p>
 
     <div class="legal">
       <p>This brand is under development by its rightful owner and is pending trademark registration in India.</p>
