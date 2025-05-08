@@ -1,118 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FurThings</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FurThings – Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #2C98E9 0%, #044EA4 100%);
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+    }
 
-      html,
-      body {
-        height: 100%;
-        font-family: 'Inter', sans-serif;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to bottom, #2C98E9, #044EA4);
-        overflow: hidden;
-        text-align: center;
-      }
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      margin: 0.2em 0;
+    }
 
-      body::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80vw;
-        max-width: 800px;
-        height: auto;
-        aspect-ratio: 3 / 1;
-        background: url('blurredfurthings.png') no-repeat center center;
-        background-size: contain;
-        opacity: 0.4;
-        z-index: 0;
-      }
+    h1 .tm {
+      font-size: 0.5rem;
+      vertical-align: super;
+      margin-left: 0.15em;
+    }
 
-      .content {
-        z-index: 1;
-        padding: 2rem;
-        max-width: 90vw;
-      }
+    p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin: 0.5em auto;
+      max-width: 90%;
+    }
 
-      h1 {
-        font-size: 3rem;
-        font-weight: 700;
-        letter-spacing: 0.03em;
-      }
+    .tagline {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 1em 0 2em;
+    }
 
-      h1 span {
-        vertical-align: super;
-        font-size: 0.5em;
-      }
+    .coming-soon {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 1.5em 0;
+    }
 
-      .tagline {
-        margin-top: 1.5rem;
-        font-weight: 400;
-        font-size: 1.1rem;
-      }
+    .footer {
+      font-size: 0.8rem;
+      opacity: 0.85;
+      margin-top: auto;
+      padding-bottom: 1em;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>FurThings<span class="tm">™</span></h1>
+    <p>We’re building something special for the world’s most loved pets.</p>
+    <p class="tagline">Accessories. Identity. Care.</p>
+    <div class="coming-soon">Coming Soon.</div>
+  </div>
 
-      .emphasis {
-        font-weight: 700;
-        font-size: 1.4rem;
-        margin-top: 0.5rem;
-      }
-
-      .coming {
-        font-size: 2rem;
-        font-weight: 600;
-        margin: 3rem 0 2rem;
-      }
-
-      .legal {
-        font-size: 0.75rem;
-        line-height: 1.4;
-        max-width: 700px;
-        margin: 0 auto;
-        opacity: 0.8;
-      }
-
-      @media (max-width: 600px) {
-        h1 {
-          font-size: 2.2rem;
-        }
-        .emphasis {
-          font-size: 1.2rem;
-        }
-        .coming {
-          font-size: 1.5rem;
-        }
-        .tagline {
-          font-size: 1rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="content">
-      <h1>FurThings<span>™</span></h1>
-      <div class="tagline">
-        We’re building something for the world’s most loved pets.
-      </div>
-      <div class="emphasis">Accessories. Identity. Care.</div>
-      <div class="coming">Coming Soon.</div>
-      <div class="legal">
-        This brand is under development by its rightful owner and is pending trademark registration in India.<br />
-        This domain is being used for legitimate commercial purposes and brand development. Any unauthorized use or impersonation is strictly prohibited.
-      </div>
-    </div>
-  </body>
+  <div class="footer">
+    <p>This brand is under development by its rightful owner and is pending trademark registration in India.</p>
+    <p>This domain is being used for legitimate commercial purposes and brand development. Any unauthorized use or impersonation is strictly prohibited.</p>
+  </div>
+</body>
 </html>
